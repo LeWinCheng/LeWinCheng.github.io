@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: LeWinCheng
 subtitle:
-description:
+description: 我们的幸福，在于陪伴；你们的痛苦，源于畏惧。
 keywords:
-author: John Doe
-language:
-timezone:
+author: LeWin Cheng
+language: zh-Hans
+timezone: UTC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://lewincheng.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,9 +73,21 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# 采用next主题
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:LeWinCheng/LeWinCheng.github.io.git
+  branch: master
+
+symbols_count_time:
+  # 文章内是否显示
+  symbols: true                # 文章字数统计
+  time: true                   # 文章阅读时长
+  # 网页底部是否显示
+  total_symbols: true          # 站点总字数统计
+  total_time: true             # 站点总阅读时长
+  exclude_codeblock: false     # 排除代码字数统计
