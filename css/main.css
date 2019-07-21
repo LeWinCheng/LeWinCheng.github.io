@@ -1749,7 +1749,7 @@ pre .javascript .function {
   border-radius: 50%;
 }
 .site-author-image {
-  transition: transform 1s ease-out;
+  transition: transform 2s ease-out;
 }
 .site-author-image:hover {
   transform: rotateZ(360deg);
@@ -1790,7 +1790,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #66ff36;
+  background: #122817;
 }
 .feed-link,
 .chat {
