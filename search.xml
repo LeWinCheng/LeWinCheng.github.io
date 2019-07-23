@@ -3,6 +3,6 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F07%2F19%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to LeWin’s personal blog. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[Welcome to LeWin’s personal blog. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment var gitment = new Gitment({ // id: '页面ID', // 可选。默认为 location.href owner: 'LeWinCheng', repo: 'https://lewincheng.github.io', oauth: { client_id: '57f0000a9cf9df46f0c3', client_secret: 'af983206a45da29a131790baa0d076dbc8589de0', }, }) gitment.render('container')]]></content>
   </entry>
 </search>
