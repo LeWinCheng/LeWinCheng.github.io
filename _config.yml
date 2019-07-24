@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true #资源文件夹开启
 relative_link: false
 future: true
 highlight:
@@ -98,3 +98,28 @@ search:
     field: post
     format: html
     limit: 10000
+
+# Live2D
+## https://github.com/xiazeyu/live2d-widget.js
+## https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    scale: 1
+    hHeadPos: 0.5
+    vHeadPos: 0.618
+    use: live2d-widget-model-tororo
+  display:
+    superSample: 2
+    width: 200
+    height: 400
+    position: left
+    hOffset: 0
+    vOffset: -20
+  mobile:
+    show: true
+    scale: 0.5
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.2
