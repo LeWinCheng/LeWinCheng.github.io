@@ -1,5 +1,6 @@
 ---
 title: Hello World
+tag: Hide
 ---
 Welcome to LeWin's personal blog.
 
