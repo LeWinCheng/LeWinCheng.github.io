@@ -1,8 +1,10 @@
 ---
 title: 出差趣事
 date: 2019-07-24 18:09:52
-tags:
-categories:
+tags: 
+  - 刘清秀
+categories: 
+  - 日记
 ---
 
 <p align="right">作者：刘清秀</p>  

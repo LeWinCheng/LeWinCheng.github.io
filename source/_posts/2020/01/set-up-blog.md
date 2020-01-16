@@ -2,15 +2,20 @@
 title: 利用Github+Hexo搭建博客网站
 p: 2020/01/set-up-blog
 date: 2020-01-15 16:05:06
+top: 2
+notshow: true
 tags: 
-categories:
+  - Lewin
+  - Hexo
+categories: 
+  - 日记
 ---
 <!--
  * @Descripttion: 利用Git+Hexo搭建个人博客
  * @Author: Lewin Cheng
  * @Date: 2020-01-15 16:05:06
  * @LastEditors  : Lewin Cheng
- * @LastEditTime : 2020-01-16 10:17:24
+ * @LastEditTime : 2020-01-16 11:31:02
  -->
  
 ## 注册GitHub并创建Repository
@@ -48,8 +53,8 @@ cd c:
 cd /c/users/user/.ssh---隐藏文件夹
 # 将生成的密钥添加到 ssh-agent
 ssh-add id_rsa
-````
-- 在GitHub中Setting进行公钥上传。将id_rsa.pub中公钥全部复制添加到SSH公钥。
+```
+- 在GitHub中Setting进行公钥上传。将`id_rsa.pub`中公钥全部复制添加到SSH公钥。
 ```bash
 # 测试，出现以下代码代表连接成功
 ssh -T git@Github.com
@@ -78,7 +83,19 @@ npm install hexo-deployer-git
 
 ## 建站
 - 打开`username.github.io`目录下的`_config.yml`文件，在文件中底部添加如下配置信息：
+```
+deploy:
+  type: git
+  repo: git@github.com:username/username.github.io.git
+  branch: master
+```
 - 进行测试
+```bash
+# hexo generate：生成静态界面
+hexo g
+# hexo server：测试localhost:4000
+hexo s
+```
 - 备份与发布  
 在Github上新建分支`hexo`用来备份博客源文件，`master`备份网站源文件
     - 在hexo分支下
@@ -115,4 +132,4 @@ hexo new draft draftname
 
 因此除了首次搭建环境之外，无需运行此命令。  
 
-如果万不得已出现 Hexo 环境损坏，需要重新初始化，可以先拷贝出 `.git`文件夹，然后搭建环境并初始化之后，将`.git`信息重新拷贝回来。
+如果万不得已出现Hexo环境损坏，需要重新初始化，可以先拷贝出 `.git`文件夹，然后搭建环境并初始化之后，将`.git`信息重新拷贝回来。
