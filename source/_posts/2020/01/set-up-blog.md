@@ -10,7 +10,7 @@ categories:
  * @Author: Lewin Cheng
  * @Date: 2020-01-15 16:05:06
  * @LastEditors  : Lewin Cheng
- * @LastEditTime : 2020-01-15 17:39:07
+ * @LastEditTime : 2020-01-16 10:17:24
  -->
  
 ## 注册GitHub并创建Repository
@@ -99,6 +99,7 @@ npm install hexo-deployer-git
     # hexo deploy：部署
     hexo d
     ```
+    
 ## 新建博客文章
 ```bash
 # 生成.md的文件。source/_posts
